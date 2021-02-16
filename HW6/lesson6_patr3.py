@@ -3,7 +3,7 @@ size = str(input().upper())
 
 
 def size_func(size1):
-    return print(table_size.get(size1))
+    return table_size.get(size1)
 
 
 table_size = {'XXS': 'Russia - 42, Germany - 36, USA - 8, France - 38, UK - 24',
@@ -14,4 +14,5 @@ table_size = {'XXS': 'Russia - 42, Germany - 36, USA - 8, France - 38, UK - 24',
               'XL': 'Russia - 54, Germany - 46, USA - 18, France - 48, UK - 34',
               'XXL': 'Russia - 56, Germany - 48, USA - 20, France - 50, UK - 36',
               'XXXL': 'Russia - 58, Germany - 50, USA - 22, France - 52, UK - 38'}
-size_func(size)
+my_size = size_func(size)
+print(my_size)
